@@ -1,0 +1,9 @@
+version: 2.2.3
+
+services:
+  diceRoller:
+    image: php:8-fpm-alpine
+    ports:
+      - 9001:9000
+    volumes:
+      - ./app:/var/www/html
